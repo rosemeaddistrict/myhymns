@@ -8,8 +8,9 @@
 <body>
     <ol>
         <h3>补充本880 当信靠主耶稣</h3>
-        <div id="youtube"></div>
-        <li>
+        <div id="youtube1"></div>
+        <div id="youtube2"></div>
+        <li >
             “当信靠主耶稣，当信当信靠主耶稣，<br>
             你和你一家都必得救；”<br>
             踏出你信心脚步，神必定为你开路，<br>
@@ -32,7 +33,11 @@
     </ol>
     <script>
         var link = `https://www.youtube.com/embed/IN3WK2gdsuw?si=ADLUbe4lQzkQ9QeB`;
-        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        var youtube = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+        document.getElementById("youtube1").innerHTML = youtube;
+        link = `https://www.youtube.com/embed/QIvHf9s0dus?si=iH7oIW-aBAadI4dW`;
+        youtube = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+        document.getElementById("youtube2").innerHTML = youtube;
     </script> 
 </body>
 </html>
