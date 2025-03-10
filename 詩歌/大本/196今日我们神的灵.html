@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <ol>
+        <h3 id="hymn"></h3>
+        <div id="youtube"></div>
+        <li>
+            今日我们神的灵，成了耶稣基督灵；<br>
+            死而复活的神人，得荣升天，此灵成。<br>
+        </li><br>
+        <li>
+            从那升天的耶稣，这灵降到我灵里，<br>
+            使祂一切的实际，都成我们的经历。<br>
+        </li><br>
+        <li>
+            这个耶稣基督灵，包含一切的成分；<br>
+            神、人二性其中存，人生、神荣也藏隐。<br>
+        </li><br>
+        <li>
+            死的功能及受苦、复活大能并升天、<br>
+            宝座、权柄和国度，全都在这灵中含。<br>
+        </li><br>
+        <li>
+            凭这一切的成分，这灵运行在我灵；<br>
+            借祂膏油的涂抹，我得享受主丰盛。<br>
+        </li><br>
+        <li>
+            这个包罗万有灵，是我一切的秘诀；<br>
+            多方作工在我里，使神作我的一切。<br>
+        </li>
+    </ol>
+    <script>
+        let title = "大本诗歌196 今日我们神的灵";
+        document.getElementById("title").innerText = title;
+        document.getElementById("hymn").innerText = title;
+        var link = `https://www.youtube.com/embed/L9jRLYAoFgY?si=9eUCHeZ2nXZrhaEc`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
