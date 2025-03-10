@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <ol>
+        <h3 id="hymn"></h3>
+        <div id="youtube"></div>
+        <li>
+            哦，主耶稣，当你在地，他们与你多年同处；<br>
+            但是他们对你自己，似识不识，似悟不悟。<br>
+        </li><br>
+        <li>
+            他们听过你的声音，他们见过你的丰姿，<br>
+            他们挤过你的肉身，但你是谁，似知不知。<br>
+        </li><br>
+        <li>
+            我们好像盖重幔子，仿佛知道，又不透明，<br>
+            说不认识，早已认识，说已认识，认识不清。<br>
+        </li><br>
+        <li>
+            但你今已化身那灵，成为另一位保惠师，<br>
+            带着你的所有丰盛，在我里面将你启示。<br>
+        </li><br>
+        <li>
+            愿你这灵浸透充满在我全人每一角落，<br>
+            没有一处不受你感，没有一处不被你摸。<br>
+        </li><br>
+        <li>
+            求你这灵向我显现，加倍实在，在我心怀；<br>
+            无耳所听，无目所见，无手所摸，如此实在。<br>
+        </li><br>
+        <li>
+            当你怜悯，肯来启示，将你自己给了我们，<br>
+            世上有谁比你更实？世上有何比你更真？<br>
+        </li><br>
+        <li>
+            求你这灵从我的灵，如同洪水漫溢全人：<br>
+            到处荣耀，到处光明，到处是你，到处是神。<br>
+        </li><br>
+        <li>
+            这个生活何等亲近！你使我已在地若天：<br>
+            赞美满口，喜乐满心，同在满魂，一切甘甜。<br>
+        </li><br>
+    </ol>
+    <script>
+        let title = "大本詩歌370 哦主耶穌當你在地";
+        document.getElementById("title").innerText = title;
+        document.getElementById("hymn").innerText = title;
+        var link = `https://www.youtube.com/embed/g0RH3HHgJOM?si=5CuqQrQQ4Zy54p5R`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
