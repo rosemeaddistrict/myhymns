@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <ol>
+        <h3 class="title"></h3>
+        <div id="youtube"></div><br>
+        <li>
+            当遇难处使我踌躇，属天异象渐糢糊，<br>
+            四围充满艰辛拦阻，似乎无力再随主；<br>
+            但主告我祂曾历世途，经忧患无枕首处，<br>
+            被挂木上尝苦胆酸醋，忧苦祂已担负。<br>
+        </li><br>
+        <li>
+            灵中听主题醒嘱咐，需要凭信走窄路；<br>
+            祂的患难要我补足，经历十架学顺服。<br>
+            祂话内住，时将我鼓舞，使我得力再举步，<br>
+            欢然随主历短暂苦楚，永远荣耀在目。<br>
+        </li><br>
+        <li>
+            看见建造异象蓝图，放胆前行无旁骛；<br>
+            所有境遇是为帮助，信徒生命早成熟。<br>
+            何等荣耀，有分神建筑，金、银、宝石非草、木，<br>
+            让神安居，且成主新妇，主的再临催促。<br>
+        </li><br>
+        <li>
+            等我行完此生路途，我要迎见亲爱主，<br>
+            且与众圣同声欢呼，此路原来不孤独。<br>
+            “好！你这良善忠信奴仆”─公义的主要宣布；<br>
+            主人快乐得欢然进入，才识你恩丰足。<br>
+        </li><br>
+    </ol>
+    <script>
+        let title = "补充本464 随主前行";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube.com/embed/9deuHPm1ZXM?si=ujpLMbv2LG0NGHG3"`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
