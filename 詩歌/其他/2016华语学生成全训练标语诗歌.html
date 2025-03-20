@@ -6,10 +6,18 @@
     <title>二〇一六年华语学生成全训练标语歌</title>
 </head>
 <body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
     <ol>
-        <h3>二〇一六年华语学生成全训练标语歌</h3><br>
-        <iframe width="364" height="204" src="https://www.youtube.com/embed/An0CdWYrkZ0?si=bA_wnUwprTiywGtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br><br><img src="./images/二〇一六年华语学生成全训练标语歌.png" width="364">
-    </ol> 
+    </ol>
+    <script>
+        let title = "二〇一六年华语学生成全训练标语歌";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube.com/embed/An0CdWYrkZ0?si=bA_wnUwprTiywGtU`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script> 
 </body>
 </html>
