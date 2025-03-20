@@ -6,10 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>2014华语成全训练标语诗歌</h3>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
     <ol>
-        <iframe width="364" height="204" src="https://www.youtube.com/embed/aby3cM50_iQ?si=bVbmSFdoaMWn8fN9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br><br><img src="./images/2014華語成全訓練標語詩歌-神的夢.png" width="364">
-    </ol> 
+    </ol>
+    <script>
+        let title = "2014华语成全训练标语诗歌";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube.com/embed/aby3cM50_iQ?si=bVbmSFdoaMWn8fN9`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script> 
 </body>
 </html>
