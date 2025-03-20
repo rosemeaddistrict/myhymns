@@ -6,10 +6,19 @@
     <title>2015华语成全训练标语诗歌-全体事奉 – 为着神家的建造</title>
 </head>
 <body>
-    <h3>2015华语成全训练标语诗歌-全体事奉 – 为着神家的建造</h3>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
     <ol>
         <iframe width="364" height="204" src="https://www.youtube.com/embed/JsMGAEeyWXI?si=l2E6FJJ_GXTwYC2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br><br><img src="./images/2015-PerfectBanner-Final-WithChords.png" width="364">
     </ol>
+    <script>
+        let title = "2015华语成全训练标语诗歌-全体事奉 – 为着神家的建造";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `ttps://www.youtube.com/embed/JsMGAEeyWXI?si=l2E6FJJ_GXTwYC2E`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script> 
 </body>
 </html>
