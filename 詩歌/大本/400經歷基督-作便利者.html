@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            哦主，在我你是生命，对我也是一切；<br>
+            何其亲切、何其便利，永远取用不竭！<br>
+        </li><br>
+            哦主，你是生命之灵，对我何亲何近！<br>
+            亲切、便利，令人赞赏，又是甜美、常新。<br>
+        <br>
+        <li>
+            对于我的大小需要，你是丰富供应；<br>
+            何其全备、何其充足，我得应用于灵。<br>
+        </li><br>
+        <li>
+            你作膏油涂抹、运行，时常顾我软弱；<br>
+            借你能力无限供应，使我刚强、灵活。<br>
+        </li><br>
+        <li>
+            生命之律灵中规律，使我得享自由；<br>
+            你的实际所有丰富，将我全人浸透。<br>
+        </li><br>
+        <li>
+            你是与我永远成一，无比神圣联结；<br>
+            永远与我成为一灵，永远不再隔绝。<br>
+        </li><br>
+        <li>
+            愿你在我全人居衷，在我心中安家；<br>
+            一部一部、荣上加荣，将我全人变化。<br>
+        </li>
+    </ol></div>
+
+    <script>
+        let title = "大本诗歌400首 经历基督-作便利者";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube.com/embed/bRz_y-vb0Fg?si=1H8E9jsKLnKaDUS3`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
