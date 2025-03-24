@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            我若认识复活大能，惟死能使生命长成，<br>
+            必爱十架的模型；若不死了，就不生。<br>
+        </li><br>
+            不死就不生，惟死能使生命长成，<br>
+            不死就不生，不死就不生。<br><br>
+        <li>
+            基督要在我心成形，我就必须死干净，<br>
+            天天活在十架阴影，时时治死魂生命。<br>
+        </li><br>
+        <li>
+            惟愿神借永远的灵，使我与主永同钉；<br>
+            死在我身发动运行，生在我身就显明。<br>
+        </li><br>
+    </ol></div>
+
+    <script>
+        let title = "大本诗歌464 我若认识复活大能";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube.com/embed/L9jRLYAoFgY?si=9eUCHeZ2nXZrhaEc`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
