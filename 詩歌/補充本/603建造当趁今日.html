@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            记得大卫起誓：『我不进我的帐幕，<br>
+            不上我的床榻，不容我打盹闭目，<br>
+            直等到我为耶和华，寻得安息之处。 』<br>
+            全能的神巴望有家使属祂者可住。<br>
+        </li><br>
+        <li>
+            我们何等眼瞎，只顾自己的事务，<br>
+            任凭神殿荒凉─哦主，你必须有路！<br>
+            我们情愿上山取木，为建你殿劳碌；<br>
+            绝不再说：『且等明日，』建造当趁今日！<br>
+        </li><br>
+        <li>
+            哦主，此时此境，激动人起来建造，<br>
+            正如大卫之日，自动答应你呼召。<br>
+            同心合意，配搭一起，受此托付，多好！<br>
+            我们所喜，是你心意，主，我们来建造。<br>
+        </li><br>
+        <li>
+            主，为着你召会，叫我们废寝忘食，<br>
+            为建造献一切─专心豫备你居所！<br>
+            阴间的门不能胜过已建成的召会。<br>
+            时候不多，建造我们，让你能早归回！<br>
+            （重复最后两行）<br>
+        </li><br>
+    </ol></div>
+
+    <script>
+        let title = "补充本诗歌603 建造当趁今日";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube-nocookie.com/embed/w8E7qmsGv_8?si=WDtMPP8L_CxP98NE`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
