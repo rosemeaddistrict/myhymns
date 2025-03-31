@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            神在永遠創世之前，喜悅、揀選並豫定，<br>
+            要叫召會在子裡面，得子名分成為聖；<br>
+            得蒙救贖，作祂產業，受祂聖靈為印記，<br>
+            保證必得祂的基業，並得先享祂自己。<br>
+        </li><br>
+        <li>
+            基督升天坐在神右，遠超一切的勢力；<br>
+            神使祂作萬有元首，召會是祂的身體。<br>
+            萬有一切祂全充滿，召會乃是祂豐滿，<br>
+            祂藉召會普及、曼延，召會彰顯祂完全。<br>
+        </li><br>
+        <li>
+            原是死在罪惡之中，隨從今世的風俗，<br>
+            撒但、邪靈竟也順從，放縱肉體真可怒。<br>
+            今與基督一同復活，一同坐在高天上，<br>
+            成為神的榮耀傑作，基督裡面所獨創。<br>
+        </li><br>
+        <li>
+            基督作了房角首石，使徒、先知為根基，<br>
+            照著神的奧祕啟示，猶太、外邦歸一體；<br>
+            在祂裡面同被建造，作神靈裡的居所；<br>
+            在靈裡面彼此相調，給神定居享安樂。<br>
+        </li><br>
+        <li>
+            一身、一靈、同一指望，一主、一信並一洗，<br>
+            一位父神，眾人之上，召會因此當合一。<br>
+            認識基督，長大成人，有祂豐滿的身量；<br>
+            不再受到誘騙、牽引，不再隨風而飄蕩。<br>
+        </li><br>
+        <li>
+            基督賜下各樣恩賜，為要建造祂身體，<br>
+            成全聖徒各盡其職，愛中建造她自己。<br>
+            脫去舊人，穿上新人，再無從前的舊樣；<br>
+            心思靈裡得以更新，滿有主神的形像。<br>
+        </li><br>
+        <li>
+            基督捨己為愛召會，要使召會脫斑皺，<br>
+            聖潔，毫無瑕疵、污穢，作祂榮耀的配偶。<br>
+            祂愛召會，保養、顧惜，如待自己的身體；<br>
+            祂與召會成為一體，乃是極大的奧祕。<br>
+        </li><br>
+        <li>
+            身體、居所、新人、配偶，召會不僅是這些；<br>
+            也是戰士，為神爭鬥，將神仇敵全除滅。<br>
+            穿戴神的全副軍裝，賴主大能而剛強；<br>
+            靠主站住，靠靈抵擋，禱告隨時又多方。  <br>
+        </li>
+    </ol></div>
+
+    <script>
+        let title = "大本诗歌597 神在永遠創世之前";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube-nocookie.com/embed/tM0hjBxEg0Y?si=5FSrKfmgKc4i83n5`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
