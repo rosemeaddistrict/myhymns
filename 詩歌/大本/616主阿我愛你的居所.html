@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            主阿，我愛你的居所，就是你的召會！<br>
+            她是你心所喜所樂，也是我心所歸。<br>
+        </li><br>
+        <li>
+            你曾為她捨了自己，為要叫她歸你；<br>
+            我也為她獻上身體，成全你的心意。<br>
+        </li><br>
+        <li>
+            為她你作我的生命，叫她作我生活；<br>
+            為她我願脫去個性，讓她作你寄託。<br>
+        </li><br>
+        <li>
+            她是你的心愛配偶，也是你的身體；<br>
+            她是我的心情所投，也是我的憑倚。<br>
+        </li><br>
+        <li>
+            在她你是我所享受，成為我所見證；<br>
+            在她我給你所佔有，滿足你的心情。<br>
+        </li><br>
+        <li>
+            主阿，我愛你的居所，就是你的召會！<br>
+            我願永在其中生活，不再別有所歸。<br>
+        </li>
+    </ol></div>
+
+    <script>
+        let title = "大本诗歌616 主阿我愛你的居所";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube.com/embed/quqhjprdcrM?si=ivgrgUASoG2Qu7ps`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
