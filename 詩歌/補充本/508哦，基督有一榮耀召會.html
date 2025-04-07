@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            哦，基督有一荣耀召会，我们有分于她─<br>
+            何等喜乐，主使我们合为一！<br>
+            看哪，在宇宙中有一身体，我们属于她─<br>
+            阿利路亚，主使我们合为一！<br>
+            阿利路亚，荣耀身体！我们是身体的肢体！<br>
+            一切完全为这身体！阿利路亚，<br>
+            主使我们合为一！<br>
+        </li><br>
+        <li>
+            不是单独孤立基督徒，乃是团体新人─<br>
+            神需要她完全彰显祂自己！<br>
+            不仅是一个地方召会，乃是整个身体─<br>
+            阿利路亚，我们在这身体里！<br>
+            阿利路亚，荣耀身体！使撒但战抖的身体！<br>
+            在身体里我们得胜！阿利路亚，<br>
+            我们在这身体里！<br>
+        </li><br>
+        <li>
+            神那完全圣别的性情，显在七金灯台─<br>
+            身体生活不容天然的存在。<br>
+            我们合一且有分神性，金灯台就照耀─<br>
+            阿利路亚，她正发光且照耀！<br>
+            阿利路亚，荣耀身体！这个身体是金灯台！<br>
+            处处发光，精光照耀！阿利路亚，<br>
+            她正发光且照耀！<br>
+        </li><br>
+        <li>
+            我们如何彰显这合一，圣别并且照耀？<br>
+            阿利路亚，吃主耶稣就是路！<br>
+            祂是生命树，是吗哪，又是常新的筵席─<br>
+            阿利路亚，我们天天都吃主！<br>
+            我们合一借着吃主！我们圣别借着吃主！<br>
+            我们发光借着吃主！阿利路亚，<br>
+            吃主耶稣就是路！ <br><br>
+            注：『身体』可改唱『国度，』副歌改唱『我们是国度的子民。 』<br>
+        </li><br>
+    </ol></div>
+
+    <script>
+        let title = "补充本508 哦，基督有一荣耀召会";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube-nocookie.com/embed/cFuxV6BQz4o?si=cu5jG4TetWLGb03x`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
+
