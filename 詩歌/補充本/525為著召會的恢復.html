@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            我们乃是为着主的召会的恢复；<br>
+            乃是为着地方召会在各地显出。<br>
+            站住地方合一立场，在主里合一；<br>
+            我们建造神的居所，完成神旨意。<br>
+        </li><br>
+            我们为着主，我们为着主，<br>
+            我们为着主的恢复！<br>
+            我们为着主，我们为着主，<br>
+            为着主的恢复！<br><br>        
+        <li>
+            我们乃是为着主的召会的恢复；<br>
+            见证基督，高举基督，带进神国度！<br>
+            活在灵中，站住立场，并广传福音。<br>
+            哦，主，阿们，阿利路亚！主必快再临！<br>
+        </li><br>
+        <li>
+            我们乃是为着主的召会的恢复；<br>
+            时刻操练我们的灵，异象更清楚！<br>
+            大巴比伦已经倾倒，撒但被摧毁；<br>
+            圣城撒冷从天而降，荣耀何光辉！<br>
+        </li><br>
+    </ol></div>
+
+    <script>
+        let title = "补充本525 為著召會的恢復";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube-nocookie.com/embed/Z4fssNE8U9I?si=WoPqIuECmPUIlLhJ`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
