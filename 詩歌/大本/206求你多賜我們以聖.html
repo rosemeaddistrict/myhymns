@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            主，我曾否叫圣灵忧愁，流荡、随便并冷落？<br>
+            然而我的犯罪和退后，未曾叫祂厌倦过。<br>
+        </li><br>
+            求你多赐我们以圣灵，让祂光照并焚烧，<br>
+            将『你』供给我们作生命，使我不住的祷告。<br><br>
+        <li>
+            你的圣灵曾如何忍耐，等我慢慢心转变；<br>
+            我曾如何弃绝你热爱，当祂为我忧心煎。<br>
+        </li><br>
+        <li>
+            你的圣灵今在我心内，我要以祂为我主；<br>
+            因为爱你使我能敬畏你的最小的宣布。<br>
+        </li><br>
+        <li>
+            我们现今虽不能爱你，如你那样爱我们；<br>
+            你在我心若将火点起，它就不会终冷沉。<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/206.png" width="500">
+
+    <script>
+        let title = "大本诗歌206 求你多赐我们以圣";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube-nocookie.com/embed/avCcPoiuNxU?si=n0j8sAmdvdPOMG7I`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
