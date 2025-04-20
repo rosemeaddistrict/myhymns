@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            弟兄和睦同居，何等美善：<br>
+            像油从亚伦头，流到衣衫；<br>
+            又像露从黑门，降在锡安；<br>
+            在此有生命福，直到永远！<br>
+        </li>
+        <li>
+            心存欢喜诚实，来赴爱筵；<br>
+            借此饱尝主恩，满心感赞！<br>
+            弟兄彼此交通，何等甘甜；<br>
+            盼望那日快到，不再离散。<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/622a.png" width="500"><br>
+    <img src="./images/622b.png" width="500">
+
+    <script>
+        let title = "大本诗歌622 弟兄和睦同居何等";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = `https://www.youtube-nocookie.com/embed/MdrQaWnQ0Uc?si=gHSH3Vq3Lhw18Je0`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
