@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <audio controls>
+        <source src="./audios/623.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <div id="lyrics">
+    <ol>
+        <li>
+            我们呼吸天上空气，香味从天而来；<br>
+            但愿每魂脱离肉体，每灵都充满爱。<br>
+        </li>
+        <li>
+            主，使我们心心相联，满有圣洁情意，<br>
+            不至有日彼此改变，不爱你或你的。<br>
+        </li>
+        <li>
+            只受你的十架指引，服你所有旨意，<br>
+            能以彼此更为亲近，能以更亲近你。<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/623.png" width="500" />
+
+    <script>
+        let title = "大本诗歌623 我们呼吸天上空气";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        //var link = `https://www.youtube-nocookie.com/embed/MdrQaWnQ0Uc?si=gHSH3Vq3Lhw18Je0`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
