@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            在日常生活或在聚会中，基督是中心，基督是内容；<br>
+            并非为仪式，也非为道理，纯是为基督，我们相聚集。<br>
+        </li><br>   
+        <li>
+            基督是道路，基督是亮光，凭祂而行动，由祂来照亮；<br>
+            基督是活水，基督是灵粮，喝祂并吃祂，从祂得餧养。<br>
+        </li><br>
+        <li>
+            基督是真理，我们所见证，基督是生命，我们所供应，<br>
+            基督是恩主，我们所称誉，基督是元首，我们所高举。<br>
+        </li><br>
+        <li>
+            对神或对人，基督是一切，神、人的需要全由祂解决；<br>
+            祂是召会的实际与内容，生命与人数都借祂而增。<br>       
+        </li><br>
+        <li>
+            所献上一切诗歌和祷告，都要叫基督借灵得发表；<br>
+            所有灵中的交通和事奉，都该是基督彰显的运行。<br>        
+        </li><br>
+        <li>
+            奉祂名聚集，随祂灵活动，借着祂恩膏祷告并赞颂；<br>
+            不是动头脑，仪式得成全，乃是运用灵，使祂得彰显。<br>       
+        </li><br>
+        <li>
+            一切全忘掉，只忠于基督，凡事应用祂，一直到成熟；<br>
+            因祂将万事都当作损失，让祂作一切，一直到永世。 <br>      
+        </li><br>
+    </ol></div>
+    <img src="./images/627.png" width="500"><br>
+
+    <script>
+        let title = "大本诗歌627 在日常生活或在";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/ZN4mYgd_1yQ?si=B2P_SEZMFhLE_qy8`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
