@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            我們都是主身上肢體，彼此相聯永不離，<br>
+            同來關心主在地權益，為此事奉纔合理，<br>
+            雖然在途中，經過許可的損失、疼痛，<br>
+            有分許多的患難交通，越發堅定而順從；<br>
+            沒有人單獨行動，你我都是弟兄，<br>
+            當一人受主感動，全體跟著向前衝，<br>
+            彼此扶持，苦樂與共，我只求這一生<br>
+            與你們同活在主身體中。<br>           
+        </li><br>   
+        <li>
+            就像迦勒陪同約書亞，爭戰為以色列家，<br>
+            並以利沙跟隨以利亞，同心放膽說主話，<br>
+            配搭的榜樣，保羅、西拉在靈裏剛強，<br>
+            身陷牢中仍讚美歌唱，神救恩大得顯彰；<br>
+            看我們臉上榮光更加有福、盼望同領受一個異象，<br>
+            沒有不同的方向，跟上時代隨主前往，<br>
+            使新路更開，廣願為神國度福音走四方。<br>            
+        </li><br>
+        <li>
+            我們知道眼前所奔跑，非屬地康莊大道，<br>
+            還要經過主一再焚燒，煉淨我天然、愛好，<br>
+            儘管我渺小，常是輭弱，會沮喪跌倒，<br>
+            你們卻又把我帶回到主那起初的懷抱；<br>
+            我真是歡喜跳躍，有主作我至寶<br>
+            又能與你們聯調，沒有比這更美好，<br>
+            我要時時向外宣報，讓更多人進入<br>
+            基督與召會永遠的榮耀。<br>        
+        </li><br>
+    </ol></div>
+    <img src="./images/762.png" width="500"><br>
+
+    <script>
+        let title = "补充本762 同活在主身体中";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "https://docs.google.com/presentation/d/1stFfhfHO_HkwGpG-2FD_9HDxKSOeBA3Q2BKND5d5ncs/edit?usp=sharing";
+        document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/SajRi8-Ydjk?si=6d0il_glQF4O7OY1`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
