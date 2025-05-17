@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            听我唱，奇妙爱：是耶稣，从天来，<br>
+            十架上，祂裂开，将神圣生命释放出来；<br>
+            真喜乐，罪全赦，进我灵，解干渴，<br>
+            住我心，永联合，且从我涌出如江河。<br>
+        </li><br> 
+        <li>
+            祂离你并不远，就在你口里面；<br>
+            主的名一呼喊，祂立刻进入你的心间；<br>
+            我尝过，我诉说，主的爱深难测，<br>
+            凡愿意，谁都可从救恩水泉来白喝。<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/848.png" width="500"><br>
+
+    <script>
+        let title = "补充本848 听我唱奇妙爱";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "";
+        document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/qDsHt4lp7UQ?si=wnzhtQU4NeNmg7JW`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
