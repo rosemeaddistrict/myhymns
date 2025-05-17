@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            我们今日的聚会乃是又新又活，<br>
+            灵里聚集并敬拜，完全自由超脱。<br>
+            我们享受基督作一切的实际，<br>
+            呼喊主名时，仪文『影儿』全都撇弃。<br>
+        </li><br>
+            又新又活的聚集，又新又活样式，<br>
+            学校、公园、或海边，那里都不在乎！<br>
+            我们弃绝一切的规条、死宗教，阿利路亚！<br>
+            主的灵冲破一切限制！<br><br>     
+        <li>
+            不要任何死宗教，不要任何形式，<br>
+            不要任何的规条，不要人的意思，<br>
+            不要那杀死人的字句与道理，阿利路亚！<br>
+            在灵里我们自由无比！<br>
+        </li><br>
+        <li>
+            又新又活的聚集，一切老旧全除；<br>
+            唱诗祷读的时候我们分享基督。<br>
+            老而又老的光景已无处可找，阿利路亚！<br>
+            主今日乃是在作新事！<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/723a.png" width="500"><br>
+    <img src="./images/723b.png" width="500"><br>
+
+    <script>
+        let title = "补充本723 又新又活的聚集";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/rXyAAlLJPnQ?si=iFUR6JU-qiIt4Zrf`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
