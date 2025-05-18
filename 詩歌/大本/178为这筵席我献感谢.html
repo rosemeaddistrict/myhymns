@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title"></h3>
+    <audio controls>
+    <source src="./audios/D178首(伴奏).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            为这筵席我献感谢，饼、杯在此同陈列；<br>
+            借此享受你的自己，神圣爱筵何超绝。<br>
+            这饼是你所舍身体，我们在此同分享；<br>
+            这杯是你所流宝血，我们在此同饮尝。<br>
+        </li><br>
+        看，这神圣筵席！其上何等表记！<br>
+        意义深厚，永垂不朽，人知何能及！ <br>
+        <br>    
+        <li>
+            借着你的救赎之死，你将生命来分赐；<br>
+            你将自己给了我们，要我有分你所是。<br>
+            借着分享这饼、这杯，我们陈列你的死；<br>
+            在此吃喝你的自己，如此记念到永世。<br>
+        </li><br>
+        <li>
+            这饼在此也是指明你那奥秘的身体；<br>
+            借此与众肢体交通，见证身体的合一。<br>
+            这杯也是神圣福杯，我们现在所祝福；<br>
+            借着你血我们交通，与你所有的圣徒。<br>    
+        </li><br>
+        <li>
+            你是我们永远的分，在此豫尝何有福；<br>
+            我们等候你的国度，你的显现我催促。<br>
+            当你显现在你国度，同着得胜的圣徒，<br>
+            重新享受你的自己，作你心爱的新妇。<br>   
+        </li><br>
+    </ol></div>
+    <img src="./images/624.png" width="500"><br>
+
+    <script>
+        let title = "大本诗歌178 为这筵席我献感谢";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        //var link = `https://www.youtube-nocookie.com/embed/xGto0J9fW-A?si=aWIiFER6FmRQcvb3`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
