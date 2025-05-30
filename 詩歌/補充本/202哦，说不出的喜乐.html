@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <audio controls>
+        <source src="./audios/B202哦说不出的喜乐.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            我们已得到万有基督，祂是我们的一切；<br>
+            呼喊祂的名，何等有福，何等神圣，何超越！<br>
+        </li>
+            <br>
+            哦，说不出的喜乐，且满了荣耀，<br>
+            满了荣耀，满了荣耀，说不出的喜乐，<br>
+            且满了荣耀，什至一半都未能说出。<br>
+            <br>
+        <li>
+            我们已知道那灵基督，住在我们的灵里，<br>
+            何等便利又亲近的主，祂的甘甜无可比。<br>
+        </li><br>
+        <li>
+            我们已得到生活秘诀，读祂话并喊祂名！<br>
+            借此吃喝主，必无所缺，它的价值真显明。<br>
+        </li><br>
+        <li>
+            我们已寻到地方召会，我们已经回到家！<br>
+            永不再在巴比伦徘徊，在召会里美而佳。<br>
+        </li><br>
+        <li>
+            我们已经历圣徒同聚，是地上最乐的事；<br>
+            借此我们的灵不忧郁，且使生活有价值。<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/202.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌94 你的救赎何等奇妙";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        //var link = "https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        var link = `https://www.youtube.com/embed/NQxHzCm23xE?si=Oa4lbK3GL_da1o-H`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
