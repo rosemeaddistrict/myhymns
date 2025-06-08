@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 id="title" class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            远在时间尚未起首，万有尚都未开始，<br>
+            在父怀中并荣耀里，你是神的独生子。<br>
+            当父将你赐给我们，你的身位仍一样，<br>
+            为将父的所有丰满，借着圣灵来表扬。<br>
+        </li><br>
+        <li>
+            借着你死并你复活，你就成为神长子；<br>
+            借着重生分赐生命，我们成为神众子。<br>
+            我们是你生命繁殖，是你许多的弟兄，<br>
+            我们是你荣耀复本，是你神圣的扩充。<br>
+        </li><br>
+        <li>
+            你曾是那惟一麦粒，落到地里而死了；<br>
+            借着死亡，并借复活，显出繁殖的荣耀。<br>
+            你使我们由你得生，变成许多的子粒；<br>
+            众人调和成为一饼，作你丰满的身体。<br>
+        </li><br>
+        <li>
+            我们是你的复制品、是你身体并新妇、<br>
+            是你表现、是你丰满，永远让你来居住。<br>
+            我们是你普及、继续、是你生命的开展、<br>
+            是你长成、是你富馀，与你合一永无间。<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/154.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌1 颂赞三一神 - 祂的计画";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "https://docs.google.com/presentation/d/1meM8V2dgwE3e0hCtL-GO-lJJ-q4hhCd9-0u8oLO8jDA/edit?usp=sharing";
+        document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/vw_rDfb0nuc?si=AvJ9Ru9FjtEoOBgg`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
