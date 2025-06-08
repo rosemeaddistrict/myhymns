@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 id="title" class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            但愿荣耀归于圣父，并圣子基督，<br>
+            且愿荣耀归于圣灵到永古。<br>
+        </li><br>
+        <li>
+            当我观赏广大创造－神智所制订，<br>
+            我灵受感，立献敬拜，并肃静。<br>
+        </li><br>
+        <li>
+            但是我神，你是深愿：能得有众子，<br>
+            今在子里对你赞美，并赏识。<br>
+        </li><br>
+        <li>
+            你话已向我们启示，你情爱秘密，<br>
+            为要我们领略接受，以爱你。<br>
+        </li><br>
+        <li>
+            因此借着基督救赎，既将敌全克，<br>
+            在新造里你就带来敬拜者。<br>            
+        </li><br>
+        <li>
+            但愿荣耀归于圣父，并圣子基督，<br>
+            且愿荣耀归于圣灵到永古。 <br>           
+        </li>
+    </ol></div>
+    <img src="./images/1.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌1 颂赞三一神 - 祂的计画";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "https://docs.google.com/presentation/d/1meM8V2dgwE3e0hCtL-GO-lJJ-q4hhCd9-0u8oLO8jDA/edit?usp=sharing";
+        document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/vw_rDfb0nuc?si=AvJ9Ru9FjtEoOBgg`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
