@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 id="title" class="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            既是基督的肢体，就当彰显基督；<br>
+            各都学习尽功用，显出祂的丰富。<br>
+            不该作一旁观者，该像肢体行动，<br>
+            不带死亡或损伤，只带有益交通。<br>
+        </li><br>
+        <li>
+            众人乃是成一队，永不单独行动，<br>
+            乃是彼此相配搭，互相倚赖听从；<br>
+            不照我们所拣选，乃随生命水流，<br>
+            永不带进分离来，只供圣灵所授。<br>
+        </li><br>
+        <li>
+            全都集中在基督，别无任何中心，<br>
+            共同交通于基督，分享祂的宏恩。<br>
+            祂是元首并内容，我们是祂丰满；<br>
+            会中任何的活动，都当将祂彰显。<br>
+        </li><br>
+        <li>
+            爱中一同被建造，无人随意批评；<br>
+            彼此成全互担就，都愿照此而行。<br>
+            全蒙拯救脱自己，拒绝天然生命；<br>
+            借恩灵中受过训，活出身体事奉。<br>
+        </li>
+    </ol></div>
+
+    <script>
+        let title = "大本诗歌629 既是基督的肢体";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        //var link = "https://docs.google.com/presentation/d/1OK0-62W-rsEuM_9LypY1Olll0OWKpeTZLyG4Zo-T4mI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        var link = `https://www.youtube.com/embed/nRY08LNOSo0?si=gq-pLOMifiWJkInN`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
