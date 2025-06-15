@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <audio controls>
+        <source src="./audios/D330首(伴奏).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            主爱长阔高深，实在不能推测；<br>
+            不然，像我这样罪人，怎能满被恩泽。<br>
+        </li><br>
+        <li>
+            我主出了重价，买我回来归祂；<br>
+            我今愿意背十字架，忠心一路跟祂。<br>
+        </li><br>
+        <li>
+            我今撇下一切，为要得着基督；<br>
+            生也、死也，想都不屑，有何使我回顾？<br>
+        </li><br>
+        <li>
+            亲友、欲好、利名，于我夫复何用？<br>
+            恩主为我变作苦贫，我今为主亦穷。<br>    
+        </li><br>
+        <li>
+            我爱我的救主，我求祂的称是；<br>
+            为祂之故，安逸变苦，利益变为损失！<br>         
+        </li><br>
+        <li>
+            你是我的安慰，我的恩主耶稣！<br>
+            除你之外，在天何归？在地何所爱慕？<br>       
+        </li><br>
+        <li>
+            艰苦、反对、飘零，我今一起不理；<br>
+            只求我主用你爱情，绕我灵、魂、身体。<br>            
+        </li><br>
+        <li>
+            主阿，我今求你，施恩引导小子，<br>
+            立在我旁，常加我力，过此黑暗罪世。<br>            
+        </li><br>
+        <li>
+            撒但、世界、肉体，时常试探、欺凌；<br>
+            你若不加小子能力，恐将贻羞你名！<br>            
+        </li><br>
+        <li>
+            现今时候不多，求主使我脱尘；<br>
+            你一再来，我即唱说：阿利路亚！阿们！<br>           
+        </li>
+    </ol></div>
+    <img src="./images/330a.jpeg" width="500"><br>
+    <img src="./images/330b.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌330 主爱长阔高深";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/IiQ7t1g9fWw?si=xYL-WOr876x_HsHT`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
