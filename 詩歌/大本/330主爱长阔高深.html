@@ -63,10 +63,11 @@
         for(i=0; i<document.getElementsByClassName("title").length; i++){
             document.getElementsByClassName("title")[i].innerText = title;
         }
-        var link = "https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
-        document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        var link = "";//"https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
         link = `https://www.youtube.com/embed/IiQ7t1g9fWw?si=xYL-WOr876x_HsHT`;
-        document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        document.getElementById("youtube").innerHTML = `<iframe width="364" height="100" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     </script>
 </body>
 </html>
