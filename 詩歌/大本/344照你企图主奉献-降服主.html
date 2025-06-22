@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <audio controls>
+        <source src="./audios/詩歌第344首-照你企圖主奉獻-降服主.mp3#t=79,203" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            照你企图，主，照你企图，<br>
+            因你是陶人，我是泥土：<br>
+            制造又甄陶，照你美意；<br>
+            降服且等候，使我归依。<br>
+        </li><br>
+        <li>
+            照你企图，主，照你企图，<br>
+            我在你面前谦卑俯伏：<br>
+            鉴察又试炼，显我真情；<br>
+            修理且洗涤，使我纯净。<br>
+        </li><br>
+        <li>
+            照你企图，主，照你企图，<br>
+            完全脱自己，是我所慕：<br>
+            破碎又剥夺，使我成零；<br>
+            挖透且倒空，使我无剩。<br>
+        </li><br>
+        <li>
+            照你企图，主，照你企图，<br>
+            深愿我全人向你降服：<br>
+            圣灵充满我，流露你命；<br>
+            基督活于我，彰显你形。<br>    
+        </li><br>
+    </ol></div>
+    <img src="./images/344.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌344 照你企图主[奉献-降服主]";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        //var link = "https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        //link = ``;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
