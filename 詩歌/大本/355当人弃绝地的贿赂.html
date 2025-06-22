@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            当人弃绝地的贿赂，前来为神而活，<br>
+            他所得的无限富有，口舌难以述说。<br>
+            因为万有全是他的，生、死、或是事、物；<br>
+            基督是他生命、呼吸，也是他的住处。<br>
+        </li><br>
+        <li>
+            像我这人，王肯选上，有分祂的宝座，<br>
+            而我竟然不肯应选，这是何其奇特！<br>
+            永远勿说这是牺牲！无论代价若干，<br>
+            只要能入加略圣军，权利都是难言。<br>
+        </li><br>
+        <li>
+            起来！将这交易算看：零碎换来整个－<br>
+            万事、万物、加上万人，竟都归你得着。<br>
+            当你属祂，万有属你，并且祂你合一；<br>
+            你还得享无限生命，权益有何能比！<br>
+        </li><br>
+    </ol></div>
+    <img src="./images/330a.jpeg" width="500"><br>
+    <img src="./images/330b.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌355 当人弃绝地的贿赂";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "";//"https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/Zht4sxrAUkc?si=ua8RhhxsQku-mAY9`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        document.getElementById("youtube").innerHTML = `<iframe width="500" height="160" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html4
