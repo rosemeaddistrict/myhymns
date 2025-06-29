@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <audio id="player" controls>
+        <source src="./audios/222.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+        <li>
+            有福的事实，主话已启示，<br>
+            我在圣灵里面已受浸；<br>
+            接受这事实，毋须再延迟，<br>
+            我在圣灵里面已受浸。<br>
+        </li><br>
+            接受！接受！凭信接受勿再延迟；<br>
+            接受！接受！凭信接受这已成事实。<br><br>
+        <li>
+            新约的话语，清楚已言明，<br>
+            我在圣灵里面已受浸；<br>
+            只需我持守，不需我何行，<br>
+            我在圣灵里面已受浸。<br>
+        </li><br>
+            持守！持守！凭信持守不稍松弛；<br>
+            持守！持守！凭信持守这已成事实。<br><br>
+        <li>
+            基督向召会，已浇下圣灵，<br>
+            我在圣灵里面已受浸；<br>
+            分享这福分，分享得丰盛，<br>
+            我在圣灵里面已受浸。<br>
+        </li><br>
+            分享！分享！凭信分享已得恩赐；<br>
+            分享！分享！凭信分享这已成事实。<br><br>
+        <li>
+            在身体里面，与身体和谐，<br>
+            凭这已成事实而行动；<br>
+            罪恶都认清，疑惑全拒绝，<br>
+            因信凭这事实就行动。<br>
+        </li><br>
+            行动！行动！因信行动在身体中；<br>
+            行动！行动！因信凭这事实而行动。<br>
+    </ol></div>
+    <img src="./images/222a.jpeg" width="500"><br>
+    <img src="./images/222b.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌222 - 接受接受凭信接受[圣灵的丰满-灵浸]";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+        var link = "";//"https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/Zht4sxrAUkc?si=ua8RhhxsQku-mAY9`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="500" height="160" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html4
