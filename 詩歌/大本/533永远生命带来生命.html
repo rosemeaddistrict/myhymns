@@ -12,6 +12,13 @@
       Your browser does not support the audio element.
     </audio>
     <div id="youtube"></div>
+    <button type="button" onclick="playAudio(8, 24)">1</button>
+    <button type="button" onclick="playAudio(25, 41)">2</button>
+    <button type="button" onclick="playAudio(41, 57)">3</button>
+    <button type="button" onclick="playAudio(58, 74)">4</button>
+    <button type="button" onclick="playAudio(75, 91)">5</button>
+    <button type="button" onclick="playAudio(92, 107)">6</button>
+    <button type="button" onclick="playAudio(108, 126)">7</button>
     <div id="lyrics">
     <ol>
         <li>
@@ -21,6 +28,7 @@
         <li>
         永远生命赐给神圣的交通；<br>
         如此主灵与我，灵里同行动。<br>
+        </li><br>
         <li>
         乃是灵里生命，带来这交通；<br>
         在灵里的交通，使我蒙恩宠。<br>
@@ -48,6 +56,17 @@
         let title = "大本诗歌533 永远生命带来生命";
         for(i=0; i<document.getElementsByClassName("title").length; i++){
             document.getElementsByClassName("title")[i].innerText = title;
+        }
+
+        let audio = "./audios/D533永远生命带来生命的交通.mp3";
+        //let object = document.getElementById("btn1")
+        //object.addEventListener("click", playAudio());
+
+        function playAudio(t1, t2){
+            console.log("Play audio...");
+            document.getElementById("player").src = `${audio}#t=${t1},${t2}`;
+            document.getElementById("player").play();
+
         }
         //var link = "";//"https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
         //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
