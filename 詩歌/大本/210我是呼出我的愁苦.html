@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+<li>
+        主，求你向我吹圣灵，教我如何吸入你；<br>
+        助我向你胸怀一倾我的犯罪与自己。<br>
+        </li><br>
+        (副)<br>
+        我是呼出我的愁苦，呼出我罪污；<br>
+        我是吸入，一直吸入，你所有丰富。<br>
+        <br><br>
+        <li>
+        我是呼出我的生命，我才可能被充满；<br>
+        放弃软弱或是力劲，吸入怜悯和恩湛。<br>
+        </li><br>
+        <li>
+        呼出我的罪律桎梏，你已为我全除摒；<br>
+        吸入你的圣洁丰富，发现惟你是生命。<br>
+        </li><br>
+        <li>
+        我正呼出我的忧愁在你慈爱的胸臆；<br>
+        吸入你的喜乐、保守，吸入你的甜安息。<br>
+        </li><br>
+        <li>
+        我正呼出我的病势，你早已为我负担；<br>
+        我正吸入你的医治，因你早已赐平安。<br>
+        </li><br>
+        <li>
+        我今呼出我的羡慕，入你慈爱的耳中；<br>
+        我今吸入你的答复，平静疑惑和惊恐。<br>
+        </li><br>
+        <li>
+        我今每刻都在呼吸你的生命作生命；<br>
+        一呼一吸都在乎你，求你由我来显明。<br>
+        </li>
+    </ol></div>
+    <img src="./images/210a.jpeg" width="500"><br>
+    <img src="./images/210b.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌 210 我是呼出我的愁苦";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+
+        let audio = "./audios/D533永远生命带来生命的交通.mp3";
+        //let object = document.getElementById("btn1")
+        //object.addEventListener("click", playAudio());
+
+        function playAudio(t1, t2){
+            console.log("Play audio...");
+            document.getElementById("player").src = `${audio}#t=${t1},${t2}`;
+            document.getElementById("player").play();
+
+        }
+        var link = "";//"https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/Hji2-9R0e7s?si=I15j2LsvS3a7Onlp`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        document.getElementById("youtube").innerHTML = `<iframe width="500" height="160" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
