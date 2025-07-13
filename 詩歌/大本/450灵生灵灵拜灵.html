@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <audio id="player" controls>
+        <source src="./audios/詩歌第450首-靈生靈靈拜靈經歷神-在靈裡.mp3#t=5,225" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="youtube"></div>
+    <div id="lyrics">
+    <ol>
+            <li>
+            神之于人一切正常故事，全都在于灵里；<br>
+            人须灵里摸着神灵本质，对神才有经历。<br>
+            </li><br>
+            (副)<br>
+            灵生灵，灵拜灵，以至灵充满我；<br>
+            灵且成话，带着丰盛生命，流出活水江河。<br>
+            <br><br>
+            <li>
+            神乃是灵，并且为人造灵，要人以灵拜灵；<br>
+            借此人能得着祂作生命，以祂为人供应。<br>
+            </li><br>
+            <li>
+            神乃是灵进入人的灵中，叫人得着重生；<br>
+            人就能在灵里与祂交通，得享祂的丰盛。<br>
+            </li><br>
+            <li>
+            神乃是灵充满、浇灌、滋润，将我变化、更新；<br>
+            直到能从我灵遍及全身，浸透我的全人。<br>
+            </li><br>
+            <li>
+            神乃是灵与我融洽、调和，使我改变形状；<br>
+            祂的成分在我一再加多，直到能得显彰。<br>
+            </li><br>
+            <li>
+            神的一切丰盛全在灵里，给我经历、享受；<br>
+            我须灵里时常将神呼吸，才得享神所有。<br>
+            </li><br>
+    </ol></div>
+    <img src="./images/450.jpeg" width="500"><br>
+
+    <script>
+        let title = "大本诗歌450 灵生灵灵拜灵";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+
+        let audio = "./audios/詩歌第450首-靈生靈靈拜靈經歷神-在靈裡.mp3";
+        //let object = document.getElementById("btn1")
+        //object.addEventListener("click", playAudio());
+
+        function playAudio(t1, t2){
+            console.log("Play audio...");
+            document.getElementById("player").src = `${audio}#t=${t1},${t2}`;
+            document.getElementById("player").play();
+
+        }
+        var link = "";//"https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        link = `https://www.youtube.com/embed/i1gwvmBziMc?si=ZVFCfcYDcW-0HSnu`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        document.getElementById("youtube").innerHTML = `<iframe width="500" height="160" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
