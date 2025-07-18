@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <audio id="player" controls>
+        <source src="./audios/D533永远生命带来生命的交通.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="youtube"></div>
+    <div>
+        <button type="button" onclick="playAudio(8, 24)">1</button>
+        <button type="button" onclick="playAudio(25, 41)">2</button>
+        <button type="button" onclick="playAudio(41, 57)">3</button>
+        <button type="button" onclick="playAudio(58, 74)">4</button>
+        <button type="button" onclick="playAudio(75, 91)">5</button>
+        <button type="button" onclick="playAudio(92, 107)">6</button>
+        <button type="button" onclick="playAudio(108, 126)">7</button>
+    </div>
+    <hr>
+    <div class="column">
+        <iframe src="./images/541.pdf" style="width:600px; height:800px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        let title = "诗歌第541首-哦主你今乃是那灵";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+
+        let audio = "./audios/D533永远生命带来生命的交通.mp3";
+        //let object = document.getElementById("btn1")
+        //object.addEventListener("click", playAudio());
+
+        function playAudio(t1, t2){
+            console.log("Play audio...");
+            document.getElementById("player").src = `${audio}#t=${t1},${t2}`;
+            document.getElementById("player").play();
+
+        }
+        //var link = "";//"https://docs.google.com/presentation/d/11fsvukm9Owsqcj7Azbr6vQaTN25L1-oONuCPCva4WdI/edit?usp=sharing";
+        //document.getElementById("title").innerHTML = `<a href=${link}>${title}</a>`;
+        //link = `https://www.youtube.com/embed/Zht4sxrAUkc?si=ua8RhhxsQku-mAY9`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        //document.getElementById("youtube").innerHTML = `<iframe width="500" height="160" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    </script>
+</body>
+</html>
