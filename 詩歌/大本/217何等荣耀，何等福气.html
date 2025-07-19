@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <!--
+    <audio id="player" controls>
+        <source src="./audios/D533永远生命带来生命的交通.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    -->
+    <div id="youtube"></div>
+    <div>
+        <button type="button" onclick="playYoutube(11, 31)">1</button>
+        <button type="button" onclick="playYoutube(32, 51)">2</button>
+        <button type="button" onclick="playYoutube(52, 72)">3</button>
+        <button type="button" onclick="playYoutube(73, 93)">4</button>
+        <button type="button" onclick="playYoutube(94, 114)">5</button>
+        <button type="button" onclick="playYoutube(115, 135)">6</button>
+        <button type="button" onclick="playYoutube(136, 156)">7</button>
+        <button type="button" onclick="playYoutube(157, 177)">8</button>
+        <div>
+            <input type="checkbox" id="score" name="score" value="score" onclick="showScore()"/>
+            <label for="score">score</label>
+        </div>
+    </div>
+    <hr>
+    <div id="lyrics" class="column">
+        <ol>
+            <li>
+            哦主，你今乃是那灵，住在我们灵里；<br>
+            二灵现今成为一灵，你我得成为一。<br>
+            </li><br>
+            <li>
+            你的灵与我们的灵，永远同证不弛：<br>
+            我们乃是神的儿女，且是神的后嗣。<br>
+            </li><br>
+            <li>
+            你已成为生命之灵，来将自己赐赋；<br>
+            我们今在我们灵中，享受你的丰富。<br>
+            </li><br>
+            <li>
+            你今是那生命之灵，引导、光照、流通；<br>
+            我们今在我们灵中，随你生活、行动。<br>
+            </li><br>
+            <li>
+            你是那灵，在我灵里，时常加强、供应；<br>
+            在我灵中，借着你灵，我们敬拜、事奉。<br>
+            </li><br>
+            <li>
+            你是那灵，经过我灵，时以叹息代祷；<br>
+            在我灵里，同着你灵，我们向你祷告。<br>
+            </li><br>
+            <li>
+            我愿回到我们灵中，在此接触你灵；<br>
+            在这灵中我们得享你的神圣供应。<br>
+            </li><br>
+            <li>
+            哦主，这是何等联结，二灵竟成一灵！<br>
+            你灵活在我的灵中，我灵住于你灵！<br>
+            </li><br>            
+        </ol>
+    </div>
+    <hr>
+    <div id="pdf">
+        <img src="./images/541.JPEG" width="500"><br>
+        <!-- <iframe src="./images/541.pdf" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+    <br><br>
+
+    <script>
+        const title = "大本诗歌217 何等荣耀，何等福气";
+        for(i=0; i<document.getElementsByClassName("title").length; i++){
+            document.getElementsByClassName("title")[i].innerText = title;
+        }
+
+        const audio = "./audios/D533永远生命带来生命的交通.mp3";
+        const videoId = "sN_zB-YNBOA?si=LXc4McHZB9G-mj-c";
+        const youtube = `https://www.youtube.com/embed/${videoId}&amp`;
+        const videoW = 360;
+        const videoH = 160;
+        document.getElementById("youtube").innerHTML = `<iframe width=\"${videoW}\" height=\"${videoH}\" src=\"${youtube}\"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        showScore();
+
+        function playAudio(t1, t2){
+            console.log("Play audio...");
+            document.getElementById("player").src = `${audio}#t=${t1},${t2}`;
+            document.getElementById("player").play();
+        }
+
+        function playYoutube(t1, t2){
+            console.log("Play youtube...");
+            const videoSetting = `${youtube};start=${t1}&end=${t2}`;
+            document.getElementById("youtube").innerHTML = `<iframe width=\"${videoW}\" height=\"${videoH}\" src=\"${videoSetting}\"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        }
+
+        function showScore() {
+            const score = document.getElementById("score").checked;
+            const obj = document.getElementById("pdf");
+            score ? obj.style.visibility = "visible" : obj.style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sN_zB-YNBOA?si=LXc4McHZB9G-mj-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
