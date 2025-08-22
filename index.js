@@ -15,7 +15,7 @@ async function loadCsvData(filename) {
     }
 }
 
-function playAudio(t1, t2){
+function playAudio(audio, t1, t2){
     console.log("Play audio...");
     document.getElementById("player").src = `${audio}#t=${t1},${t2}`;
     document.getElementById("player").play();
@@ -27,8 +27,25 @@ function playYoutube(youtube, videoW, videoH, t1, t2){
     document.getElementById("youtube").innerHTML = `<iframe width=\"${videoW}\" height=\"${videoH}\" src=\"${videoSetting}\"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 }
 
+var scoreSRC = "";
 function showScore() {
     const score = document.getElementById("score").checked;
-    const obj = document.getElementById("pdf");
+    const obj = document.getElementById("images");
     score ? obj.style.visibility = "visible" : obj.style.visibility = "hidden";
+}
+
+function addScore(src) {
+    scoreSRC = src;
+    const images = document.getElementById("images");
+    const newImg = document.createElement("img");
+    newImg.setAttribute('src', src);
+    newImg.setAttribute('width', 500);
+    images.append(newImg);
+}
+
+function removeScore() {
+    // Get a reference to the image element you want to remove
+    const imageToRemove = document.getElementById('img'); 
+    // Remove the image directly
+    imageToRemove.remove(); 
 }

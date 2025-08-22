@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="title"></title>
 </head>
-<body onload="loadCsvData('./csv/408.csv')">
+<body>
     <h3 class="title" id="title"></h3>
     <audio id="player" controls>
         <source src="" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+    <div>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",41, 289)'>1</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",72, 289)'>2</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",102, 289)'>3</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",132, 289)'>4</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",164, 289)'>5</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",195, 289)'>6</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",225, 289)'>7</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",256, 289)'>8</button>
+    </div>
     <pre id="youtube"></pre>
     <hr>
     <pre id="csvContent"></pre>
     <div>
-        <input type="checkbox" id="score" name="score" value="score" onclick="showScore()"/>
+        <input type="checkbox" id="score" name="score" value="score" checked onclick="showScore()"/>
         <label for="score">score</label>
     </div>
     <hr>
-    <div id="pdf">
-        <img src="./images/Hymn_大本詩歌408經歷基督－與祂交通.png" width="500"><br>
-    </div>
+    <div id="images"></div>
     <br><br>
 
     <script>
-        const title = "詩歌第408首-你名似膏香經歷基督-與祂交通";
-        for(i=0; i<document.getElementsByClassName("title").length; i++){
-            document.getElementsByClassName("title")[i].innerText = title;
-        }
-        const audio = "./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,228";
-        document.getElementById("player").setAttribute('src', audio);
-        document.getElementById("pdf").style.visibility = "hidden";
+        window.onload = function() {
+            // Your JavaScript code to execute after the page loads
+            const audio = "./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,228";
+            document.getElementById("player").setAttribute('src', audio);
+            const src = "./images/Hymn_大本詩歌408經歷基督－與祂交通.png";
+            const title = "詩歌第408首-你名似膏香經歷基督-與祂交通";
+            for(i=0; i<document.getElementsByClassName("title").length; i++){
+                document.getElementsByClassName("title")[i].innerText = title;
+            }
+            loadCsvData('./csv/408.csv');
+            addScore(src);
+        };
     </script>
     <script src="../../index.js"></script>
 </body>
