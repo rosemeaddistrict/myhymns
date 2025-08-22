@@ -28,10 +28,10 @@ function playYoutube(youtube, videoW, videoH, t1, t2){
 }
 
 var scoreSRC = "";
-function showScore() {
+function showScore(src) {
     const score = document.getElementById("score").checked;
     const obj = document.getElementById("images");
-    score ? obj.style.visibility = "visible" : obj.style.visibility = "hidden";
+    score ? addScore(src) : removeScore();
 }
 
 function addScore(src) {
@@ -40,12 +40,15 @@ function addScore(src) {
     const newImg = document.createElement("img");
     newImg.setAttribute('src', src);
     newImg.setAttribute('width', 500);
+    newImg.setAttribute('id', "img");
     images.append(newImg);
 }
 
 function removeScore() {
     // Get a reference to the image element you want to remove
+    const parentDiv = document.getElementById('images'); 
     const imageToRemove = document.getElementById('img'); 
+    parentDiv.removeChild(imageToRemove); 
     // Remove the image directly
     imageToRemove.remove(); 
 }

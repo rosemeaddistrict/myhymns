@@ -25,25 +25,23 @@
     <hr>
     <pre id="csvContent"></pre>
     <div>
-        <input type="checkbox" id="score" name="score" value="score" checked onclick="showScore()"/>
+        <input type="checkbox" id="score" name="score" value="score" onclick='showScore("./images/Hymn_大本詩歌408經歷基督－與祂交通.png")'/>
         <label for="score">score</label>
     </div>
     <hr>
-    <div id="images"></div>
+    <div id="images"></div
     <br><br>
 
     <script>
         window.onload = function() {
             // Your JavaScript code to execute after the page loads
-            const audio = "./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,228";
+            const audio = "./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,289";
             document.getElementById("player").setAttribute('src', audio);
-            const src = "./images/Hymn_大本詩歌408經歷基督－與祂交通.png";
             const title = "詩歌第408首-你名似膏香經歷基督-與祂交通";
             for(i=0; i<document.getElementsByClassName("title").length; i++){
                 document.getElementsByClassName("title")[i].innerText = title;
             }
             loadCsvData('./csv/408.csv');
-            addScore(src);
         };
     </script>
     <script src="../../index.js"></script>

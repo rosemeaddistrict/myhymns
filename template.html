@@ -7,86 +7,44 @@
 </head>
 <body>
     <h3 class="title" id="title"></h3>
-    <!--
     <audio id="player" controls>
-        <source src="./audios/D533永远生命带来生命的交通.mp3" type="audio/mpeg">
+        <source src="" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-    -->
-    <div id="youtube"></div>
     <div>
-        <button type="button" onclick="playYoutube(10, 56)">1</button>
-        <button type="button" onclick="playYoutube(57, 103)">2</button>
-        <button type="button" onclick="playYoutube(104, 150)">3</button>
-        <button type="button" onclick="playYoutube(151, 196)">4</button>
-        <button type="button" onclick="playYoutube(197, 220)">副</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",41, 289)'>1</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",72, 289)'>2</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",102, 289)'>3</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",132, 289)'>4</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",164, 289)'>5</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",195, 289)'>6</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",225, 289)'>7</button>
+        <button type="button" onclick='playAudio("./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",256, 289)'>8</button>
     </div>
+    <pre id="youtube"></pre>
     <hr>
-    <div id="lyrics" class="column">
-        <ol>
-        <li>
-        何等荣耀，何等福气，真理圣灵在我心，<br>
-        见证救主，启示真理，光照、安慰并指引。<br> 
-        </li><br>
-        充满我！充满我！愿主圣灵充满我；<br>
-        将我倒空，将我剥夺，愿主圣灵充满我。<br>
-        <br>
-        <li>
-        愿主所说在我证实，生命圣灵将我释，<br>
-        使我脱离罪律辖制，脱离死亡的权势。<br>
-        </li><br>
-        <li>
-        我如困鹿切慕溪水，深愿圣灵解我渴，<br>
-        使我尝到丰满滋味，流出活水的江河。<br>
-        </li><br>
-        <li>
-        愿我自己被置死地，使我充满主圣灵；<br>
-        愿我全人归主管理，使我变成主荣形。<br>
-        </li>      
-        </ol>
-    </div>
+    <pre id="csvContent"></pre>
     <div>
-        <input type="checkbox" id="score" name="score" value="score" onclick="showScore()"/>
+        <input type="checkbox" id="score" name="score" value="score" onclick='showScore("./詩歌/大本/images/Hymn_大本詩歌408經歷基督－與祂交通.png")'/>
         <label for="score">score</label>
     </div>
     <hr>
-    <div id="pdf">
-        <img src="./images/217.JPEG" width="500"><br>
-        <!-- <iframe src="./images/541.pdf" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
-    </div>
+    <div id="images"></div
     <br><br>
 
     <script>
-        const title = "大本诗歌217 何等荣耀，何等福气";
-        for(i=0; i<document.getElementsByClassName("title").length; i++){
-            document.getElementsByClassName("title")[i].innerText = title;
-        }
-
-        const audio = "./audios/D533永远生命带来生命的交通.mp3";
-        const videoId = "sN_zB-YNBOA?si=LXc4McHZB9G-mj-c";
-        const youtube = `https://www.youtube.com/embed/${videoId}&amp`;
-        const videoW = 400;
-        const videoH = 160;
-        document.getElementById("youtube").innerHTML = `<iframe width=\"${videoW}\" height=\"${videoH}\" src=\"${youtube}\"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-        showScore();
-
-        function playAudio(t1, t2){
-            console.log("Play audio...");
-            document.getElementById("player").src = `${audio}#t=${t1},${t2}`;
-            document.getElementById("player").play();
-        }
-
-        function playYoutube(t1, t2){
-            console.log("Play youtube...");
-            const videoSetting = `${youtube};start=${t1}&end=${t2}`;
-            document.getElementById("youtube").innerHTML = `<iframe width=\"${videoW}\" height=\"${videoH}\" src=\"${videoSetting}\"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-        }
-
-        function showScore() {
-            const score = document.getElementById("score").checked;
-            const obj = document.getElementById("pdf");
-            score ? obj.style.visibility = "visible" : obj.style.visibility = "hidden";
-        }
+        window.onload = function() {
+            // Your JavaScript code to execute after the page loads
+            const audio = "./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,289";
+            document.getElementById("player").setAttribute('src', audio);
+            const src = "./詩歌/大本/images/Hymn_大本詩歌408經歷基督－與祂交通.png";
+            const title = "詩歌第408首-你名似膏香經歷基督-與祂交通";
+            for(i=0; i<document.getElementsByClassName("title").length; i++){
+                document.getElementsByClassName("title")[i].innerText = title;
+            }
+            loadCsvData('./詩歌/大本/csv/408.csv');
+        };
     </script>
+    <script src="./index.js"></script>
 </body>
 </html>
