@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <pre id="youtube"></pre>
+    <hr>
+    <pre id="csvContent"></pre>
+    <div>
+        <input type="checkbox" id="score" name="score" value="score" onclick='showScore("./images/141.png")'/>
+        <label for="score">score</label>
+    </div>
+    <hr>
+    <div id="images"></div
+    <br><br>
+
+    <script>
+        window.onload = function() {
+            // Your JavaScript code to execute after the page loads
+            //const audio = "./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,289";
+            //document.getElementById("player").setAttribute('src', audio);
+            const title = "大本詩歌141首 - 讚美主 - 祂的美麗";
+            for(i=0; i<document.getElementsByClassName("title").length; i++){
+                document.getElementsByClassName("title")[i].innerText = title;
+            }
+            loadCsvData('./csv/141.csv');
+            var link = `https://www.youtube-nocookie.com/embed/8VhMUtoMsY8?si=yU--9xhBJ3i8XyEG`;
+            document.getElementById("youtube").innerHTML = `<iframe width="364" height="204" src=${link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        };
+    </script>
+    <script src="../../index.js"></script>
+</body>
+</html>
