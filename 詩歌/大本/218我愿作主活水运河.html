@@ -7,42 +7,40 @@
 </head>
 <body>
     <h3 class="title" id="title"></h3>
-    <!--
     <audio id="player" controls>
-        <source src="./audios/D533永远生命带来生命的交通.mp3" type="audio/mpeg">
+        <source src="./audios/D218我已得蒙宝血洗净.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-    -->
     <div id="youtube"></div>
     <div>
-        <button type="button" onclick="playYoutube(10, 56)">1</button>
-        <button type="button" onclick="playYoutube(57, 103)">2</button>
-        <button type="button" onclick="playYoutube(104, 150)">3</button>
-        <button type="button" onclick="playYoutube(151, 196)">4</button>
-        <button type="button" onclick="playYoutube(197, 220)">副</button>
+        <button type="button" onclick="playAudio(10, 43)">1</button>
+        <button type="button" onclick="playAudio(43, 75)">2</button>
+        <button type="button" onclick="playAudio(76, 108)">3</button>
+        <button type="button" onclick="playAudio(109, 141)">4</button>
+        <button type="button" onclick="playAudio(26, 42)">副</button>
     </div>
     <hr>
     <div id="lyrics" class="column">
         <ol>
-        <li>
-        何等荣耀，何等福气，真理圣灵在我心，<br>
-        见证救主，启示真理，光照、安慰并指引。<br> 
-        </li><br>
-        充满我！充满我！愿主圣灵充满我；<br>
-        将我倒空，将我剥夺，愿主圣灵充满我。<br>
-        <br>
-        <li>
-        愿主所说在我证实，生命圣灵将我释，<br>
-        使我脱离罪律辖制，脱离死亡的权势。<br>
-        </li><br>
-        <li>
-        我如困鹿切慕溪水，深愿圣灵解我渴，<br>
-        使我尝到丰满滋味，流出活水的江河。<br>
-        </li><br>
-        <li>
-        愿我自己被置死地，使我充满主圣灵；<br>
-        愿我全人归主管理，使我变成主荣形。<br>
-        </li>      
+            <li>
+            我已得蒙宝血洗净，充满天上的喜乐；<br>
+            我已得着永远生命，成为活水的运河。 <br>
+            </li><br>
+            我愿作主活水运河，充满生命的圣灵，<br>
+            灌输生命，解人干渴，涌流活水无止境。<br>
+            <br>
+            <li>
+            奇妙救恩，甜美、丰盛，满足我心如我意；<br>
+            我愿天天作此见证，吸引多人来归依。<br>
+            </li><br>
+            <li>
+            主，你使我完全成圣，作你贵重的器皿，<br>
+            充满恩典，充满生命，供应饥渴的人群。<br>
+            </li><br>
+            <li>
+            将我倒空，将我充满，愿我全人你占有；<br>
+            活水江河洋溢、泛滥，涌流生命到永久。<br>
+            </li>  
         </ol>
     </div>
     <div>
@@ -51,24 +49,25 @@
     </div>
     <hr>
     <div id="pdf">
-        <img src="./images/217.JPEG" width="500"><br>
+        <img src="./images/218.jpeg" width="500"><br>
         <!-- <iframe src="./images/541.pdf" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
     </div>
     <br><br>
 
     <script>
-        const title = "大本诗歌217 何等荣耀，何等福气";
+        const title = "大本诗歌218 我愿作主活水运河";
         for(i=0; i<document.getElementsByClassName("title").length; i++){
             document.getElementsByClassName("title")[i].innerText = title;
         }
 
-        const audio = "./audios/D533永远生命带来生命的交通.mp3";
-        const videoId = "sN_zB-YNBOA?si=LXc4McHZB9G-mj-c";
+        const audio = "./audios/D218我已得蒙宝血洗净.mp3";
+        /*const videoId = "sN_zB-YNBOA?si=LXc4McHZB9G-mj-c";
         const youtube = `https://www.youtube.com/embed/${videoId}&amp`;
         const videoW = 400;
         const videoH = 160;
         document.getElementById("youtube").innerHTML = `<iframe width=\"${videoW}\" height=\"${videoH}\" src=\"${youtube}\"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-        showScore();
+        */
+       showScore();
 
         function playAudio(t1, t2){
             console.log("Play audio...");
