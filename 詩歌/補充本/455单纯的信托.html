@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <pre id="audio"></pre>
+    <pre id="youtube"></pre>
+    <hr>
+    <pre id="csvContent"></pre>
+    <div>
+        <input type="checkbox" id="score" name="score" value="score" onclick='showScore("./images/455.jpeg")'/>
+        <label for="score">score</label>
+    </div>
+    <hr>
+    <div id="images"></div
+    <br><br>
+
+    <script>
+        window.onload = function() {
+            // Your JavaScript code to execute after the page loads
+            //const audio = "./詩歌/大本/audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,289";
+            //document.getElementById("player").setAttribute('src', audio);
+            const title = "补充本455 单纯的信托";
+            for(i=0; i<document.getElementsByClassName("title").length; i++){
+                document.getElementsByClassName("title")[i].innerText = title;
+            }
+            loadCsvData('./csv/455.csv');
+            const youtube = "https://www.youtube-nocookie.com/embed/R7aveJtlp0U?si=IP5T7QE3zGBnc6Tq";
+            playYoutubeAll(youtube, 364, 204);
+        };
+    </script>
+    <script src="../../index.js"></script>
+</body>
+</html>
