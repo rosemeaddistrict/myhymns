@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <!--
+    <audio id="player" controls>
+        <source src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",41, 289)'>1</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",72, 289)'>2</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",102, 289)'>3</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",132, 289)'>4</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",164, 289)'>5</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",195, 289)'>6</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",225, 289)'>7</button>
+        <button type="button" onclick='playAudio("./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3",256, 289)'>8</button>
+    </div> 
+    -->
+    <pre id="youtube"></pre>
+    <hr>
+    <pre id="csvContent"></pre>
+    <div>
+        <input type="checkbox" id="score" name="score" value="score" onclick='showScore("./images/568.jpeg")'/>
+        <label for="score">score</label>
+    </div>
+    <hr>
+    <div id="images"></div
+    <br><br>
+
+    <script>
+        window.onload = function() {
+            // Your JavaScript code to execute after the page loads
+            //const audio = "./audios/詩歌第408首-你名似膏香經歷基督-與祂交通.mp3#t=41,289";
+            //document.getElementById("player").setAttribute('src', audio);
+            const title = "大本詩歌 568 禱告-與主交通";
+            for(i=0; i<document.getElementsByClassName("title").length; i++){
+                document.getElementsByClassName("title")[i].innerText = title;
+            }
+            loadCsvData('./csv/568.csv');
+            const youtube = "https://www.youtube.com/embed/eW2qKXxFoIo?si=Zg-Wafrhmnp16mr0";
+            const videoW = 364;
+            const videoH = 160;
+            playYoutubeAll(youtube, videoW, videoH);
+        };
+    </script>
+    <script src="../../index.js"></script>
+</body>
+</html>
