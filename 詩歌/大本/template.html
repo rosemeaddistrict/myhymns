@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+</head>
+<body>
+    <h3 class="title" id="title"></h3>
+    <audio id="player" controls>
+        <source src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <pre id="youtube"></pre>
+    <hr>
+    <pre id="csvContent"></pre>
+    <hr>
+    <div id="images"></div
+    <br><br>
+
+    <script>
+        window.onload = function() {
+            // Your JavaScript code to execute after the page loads
+            const audio = "./audios/詩歌第416首-我已相信真事實經歷基督-與祂交通.mp3#t=45,206";
+            document.getElementById("player").setAttribute('src', audio);
+            const title = "诗歌第416首-我已相信真事实";
+            for(i=0; i<document.getElementsByClassName("title").length; i++){
+                document.getElementsByClassName("title")[i].innerText = title;
+            }
+            loadCsvData('./csv/416.csv');
+        };
+    </script>
+    <script src="../../index.js"></script>
+</body>
+</html>
